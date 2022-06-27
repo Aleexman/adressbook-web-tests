@@ -20,7 +20,8 @@ namespace adressbook_web_tests
         [SetUp]
         public void SetupTest()
         {
-            driver = new FirefoxDriver("./");
+            driver = new FirefoxDriver();  
+
             baseURL = "http://localhost/addressbook";
             verificationErrors = new StringBuilder();
         }
